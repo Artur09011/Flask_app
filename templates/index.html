@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>ARTUR VARDANYAN</b></h1>
+    <h6>Welcome to the blog of <span class="w3-tag">Artur's world</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="/static/photo-1484557052118-f32bd25b45b5.avif" alt="Fashion Blog" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Artur's</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>IT BLOG</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>The Future of Cloud Computing: What’s Next?</h3>
+          <h5>Title description, <span class="w3-opacity">November 12, 2024</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="/static/1.avif" alt="Girl Hat" style="width:10%" class="w3-padding-16">
+          <p><strong>Cloud computing</strong> has revolutionized how businesses store and manage data, but its future looks even more promising. With advancements in edge computing, AI-driven cloud services, and improved security measures, cloud technology is becoming faster, smarter, and more efficient. In 2024, we can expect to see more companies moving to hybrid cloud environments, integrating cloud with their on-premises infrastructure to enhance flexibility and scalability.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="/static/2.avif" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Armen <span class="w3-opacity w3-medium">May 3, 2015, 6:32 PM</span></h4>
+                <p>Great blog post! Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Why Cybersecurity Is Everyone’s Responsibility</h3>
+          <h5>Title description, <span class="w3-opacity">September 23, 2023</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="/static/3.avif" alt="Men in Hats" style="width:10%" class="w3-padding-16">
+          <p><strong>In today’s digital world</strong></p>
+          <p>cybersecurity is often seen as an IT department issue. However, with rising cyberattacks and data breaches, it’s more critical than ever for every employee to understand the basics of cybersecurity. Simple practices like creating strong passwords, recognizing phishing emails, and following security protocols can make a huge difference in protecting sensitive data and systems.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="/static/4.avif" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Levon <span class="w3-opacity w3-medium">Jule 26, 2023, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="it2.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Ani <span class="w3-opacity w3-medium">Jule 25, 2023, 12:31 PM</span></h4>
+                <p>Looking forward to your next post!</p><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w3-col l4 s12">
+      <div class="w3-white w3-padding-32">
+        <h4>About Me</h4>
+        <img src="/static/art.jpg" class="w3-round w3-image w3-padding-16" alt="Me" style="width:100%">
+        <h5><b>Artur Vardanyan</b></h5>
+        <p>Hi, I'm Artur, and I love all things tech! I'm a software developer with a passion for cybersecurity and cloud computing. Follow me for the latest updates on the IT world.</p>
+      </div>
+      <div class="w3-white w3-padding-32">
+        <h4>Popular Posts</h4>
+        <ul class="w3-ul w3-hoverable">
+          <li class="w3-padding-16">
+            <img src="/static/1.avif" alt="Post 1" style="width:80px" class="w3-left w3-margin-right">
+            <span class="w3-large">Tech Trends 2024</span><br>
+            <span>January 20, 2024</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="/static/it2.jpg" alt="Post 2" style="width:80px" class="w3-left w3-margin-right">
+            <span class="w3-large">How AI Will Change the World</span><br>
+            <span>October 30, 2024</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-light-grey">
+    <p>Artur Vardanyan</p>
+  </footer>
+
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-blue">
+      <span onclick="document.getElementById('subscribe').style.display='none'" class="w3-button w3-display-topright w3-transparent w3-xlarge">×</span>
+      <h2>Subscribe</h2>
+    </div>
+    <form class="w3-container">
+      <p><input class="w3-input w3-border" type="email" placeholder="Enter email" required></p>
+      <button type="submit" class="w3-btn w3-black w3-padding-large">Subscribe</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// When the user clicks on the button, show the replies
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+// When the user clicks like
+function likeFunction(button) {
+  button.innerHTML = "<b><i class='fa fa-thumbs-up'></i> Liked</b>";
+}
+</script>
+
+</body>
+</html>
